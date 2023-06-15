@@ -1,0 +1,22 @@
+/*
+CSS for 404 page
+This CSS file is responsible for styling the 404 error page.
+*/
+
+/* Styles for the main image on the 404 page */
+.four-0-four-image {
+display: block;
+margin: 60px auto; /* Center the image horizontally and provide a margin of 60px from the top */
+}
+
+/* Styles for the error message on the 404 page */
+.four-0-four-msg {
+text-align: center; /* Center the text horizontally /
+text-transform: capitalize; /* Capitalize the first letter of each word in the text */
+color: #383838; /* Set the text color to a dark gray */
+}
+
+/* Styles for links within the error message */
+.four-0-four-msg a {
+color: #383838; /* Set the link color to a dark gray */
+}

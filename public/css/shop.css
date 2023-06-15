@@ -1,0 +1,80 @@
+/*
+shop.css
+This CSS file contains styles for a shop section on a webpage.
+*/
+
+/* Page Header */
+#page-header {
+background-image: url("../img/banner/b1.jpg");
+width: 100%;
+height: 40vh;
+background-size: cover;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: column;
+padding: 14px;
+}
+
+/* Page Header Text */
+#page-header h2,
+#page-header p {
+color: #fff;
+}
+
+/* Pagination */
+#pagination {
+text-align: center;
+}
+
+/* Pagination Links */
+#pagination a {
+text-decoration: none;
+background-color: #313131;
+padding: 15px 20px;
+border-radius: 4px;
+color: #fff;
+font-weight: 600;
+}
+
+/* Pagination Link Icons */
+#pagination a i {
+font-size: 16px;
+font-weight: 600;
+}
+
+h2, p, marquee {
+    font-family: Brandon Bold,Helvetica,Arial,sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+.link-a {
+    font-family: Brandon Bold,Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .15em;
+    font-size: 14px;
+    text-align: center;
+    color: inherit;
+    text-decoration: inherit;
+    text-align: center;
+    padding-bottom: 3px;
+    padding-top: 1.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-left: 10%;
+    --tw-border-opacity: 1;
+    border-color: rgb(0 0 0/var(--tw-border-opacity));
+    flex-shrink: 0;
+    margin-right: 0.5rem;
+    font-weight: bolder;
+}
+
+
+.active {
+    border-bottom: solid  #333 2px;
+}

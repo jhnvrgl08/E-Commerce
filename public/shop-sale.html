@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing - Sale</title>
+
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/feature.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    
+    <!-- Navigation section -->
+    <section class="navbar"></section>
+
+    <!-- Marquee section -->
+    <div class="marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite" width="100%">
+          Discover the latest fashion trends and create stunning outfits with Clothing Corner.
+          We provide both Basic and Creative modes for you to customize your style according to your preferences.
+      </marquee>
+    </div>
+
+    <section class=""></section> <!-- Empty section -->
+
+    <!-- Sale Products section -->
+    <section id="product1" class="section-p1">
+      <h2>Sale Products</h2>
+      <p>These are the available sale products in our shop.</p>
+    </section>
+
+    <!-- Shop Navigation Links -->
+    <section class="link-container" style="border-top: 2px solid #f2f2f2; border-bottom:1px solid #f2f2f2; margin-bottom: 20px;">
+      <a href="../shop.html" class="link-a">Latest</a>
+      <a href="../shop-men.html" class="link-a">Men</a>
+      <a href="../shop-women.html" class="link-a">Women</a>
+      <a href="../shop-accessories.html" class="link-a">Accessories</a>
+      <a href="../shop-sale.html" class="link-a active">Sale</a>
+    </section>
+
+    <section id="sale-men-products"></section> <!-- Sale Men Products -->
+
+    <section id="sale-women-products"></section> <!-- Sale Women Products -->
+
+    <section id="sale-accessories-products"></section> <!-- Sale Accessories Products -->
+
+    <!-- Newsletter section -->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button style="font-weight:bolder" class="normal">Sign Up</button>
+      </div>
+    </section>
+    
+    <footer></footer> <!-- Footer section -->
+
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/app-home.js"></script>
+    <script src="js/footer.js"></script>
+
+    <script>
+      // Retrieve and display Sale Men products
+      getProducts('Sale Men', "sale men").then(data => createProductSlider(data, '#sale-men-products', 'Sale Men-Products'))
+
+      // Retrieve and display Sale Women products
+      getProducts('Sale Women', 'sale women').then(data => createProductSlider(data, '#sale-women-products', 'Sale Women-Products'))
+
+      // Retrieve and display Sale Accessories products
+      getProducts('Sale Accessories', 'sale accessories').then(data => createProductSlider(data, '#sale-accessories-products', 'Sale Accessories-Products'))
+    </script>
+
+  </body>
+</html>

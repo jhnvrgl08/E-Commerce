@@ -1,0 +1,599 @@
+/*
+Home.css
+This CSS file contains styles for a home section on a webpage.
+*/
+
+
+/* Importing CSS files */
+@import 'nav.css';
+@import 'footer.css';
+@import 'feature.css';
+
+/* Importing fonts from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* Resetting default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Transition*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  opacity: 1;
+  z-index: 9;
+  animation: fade-out 2s forwards 1;
+  pointer-events: none;
+}
+
+/* Setting smooth scroll behavior for the HTML element */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+/* Subheading style */
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+/* Custom heading style */
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* Paragraph style */
+p {
+  font-size: 16px;
+  color: #465b52;
+}
+
+/* Padding for section with class 'section-p1' */
+.section-p1 {
+  padding: 40px 80px;
+}
+
+/* Margin for section with class 'section-m1' */
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* Styles for the hero section */
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url('../img/header.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 1s ease-in-out; /* Fade-in animation effect for the hero section */
+}
+
+/* Animation keyframes for the fade-in effect */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo styles within the hero section */
+.hero-section .logo {
+  height: 150px;
+  display: block;
+  margin: auto;
+  animation: zoom-in 1s ease-in-out; /* Zoom-in animation effect for the logo */
+}
+
+/* Animation keyframes for the zoom-in effect */
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Subheading styles within the hero section */
+.hero-section .sub-heading {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 300;
+  animation: fade-in 1s ease-in-out; /* Fade-in animation effect for the sub-heading */
+}
+/* Styles for product */
+
+/* Product container */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Background image for product */
+.product::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('product-background.jpg');
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Product category */
+.product-category {
+  padding: 0 10vw;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  color: #222;
+  animation: fade-in 1s ease-in-out;
+  text-align: center;
+}
+
+/* Styling for the line after product category */
+.product-category::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  margin-top: 8px;
+  opacity: 0.3;
+  transition: opacity 0.1s ease-in-out;
+}
+
+/* Hover effect for the line after product category */
+.product-category:hover::after {
+  opacity: 0.5;
+}
+
+/* Product container */
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin-bottom: 20px;
+  gap: 20px; /* Adjusted gap between product cards for a more balanced look */
+  align-items: flex-start;
+  justify-content: flex-start; /* Added justify-content property to align products to the start */
+}
+
+/* Styling for the scrollbar */
+.product-container::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f8f8f8;
+}
+
+.product-container::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 3px;
+}
+
+.product-container::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
+/* Hover styling for the scrollbar */
+.product-container:hover::-webkit-scrollbar {
+  width: 6px;
+  background-color: #f8f8f8;
+}
+
+.product-container:hover::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+}
+
+.product-container:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
+
+/* Hide the scrollbar when not hovered */
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles for product card */
+
+/* Product card container */
+.product-card {
+  flex: 0 0 auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 20px;
+  width: 250px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  animation: fade-in 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Product card image */
+.product-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Product title */
+.product-card .product-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
+
+/* Product description */
+.product-card .product-description {
+  font-size: 16px;
+  color: #777777;
+  margin-top: 5px;
+}
+
+/* Product price */
+.product-card .product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #777777;
+  margin-top: 10px;
+}
+
+/* Hover effect for card button */
+.product-card:hover .card-btn {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Card button */
+.card-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Hover effect for card button */
+.card-btn:hover {
+  background: #efefef;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Fade-in animation for product card */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Product image container */
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Product thumbnail image */
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Discount tag */
+.discount-tag {
+  position: absolute;
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #333;
+  right: 10px;
+  top: 10px;
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for discount tag */
+.discount-tag:hover {
+  transform: scale(1.05);
+}
+
+/* Triangular arrow for discount tag */
+.discount-tag::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+}
+
+/* Product info button */
+.card-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Hover effect for product info button */
+.card-btn:hover {
+  background: #efefef;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect for product card */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.2);
+}
+
+/* Product card image */
+.product-card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product title */
+.product-card .product-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 10px;
+}
+
+/* Product description */
+.product-card .product-description {
+  font-size: 14px;
+  color: #777777;
+  margin-top: 5px;
+}
+
+/* Product price */
+.product-card .product-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #777777;
+  margin-top: 10px;
+}
+
+/* Product info container */
+.product-info {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Product brand */
+.product-brand {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #333;
+  margin-top: 20px;
+  display: block;
+}
+
+/* Product short description */
+.product-short-des {
+  margin-top: -20px;
+  padding: 10px;
+  display: flex;
+  white-space: normal;
+  text-overflow: ellipsis;
+  opacity: 0.5;
+  font-size: bold;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+/* Hover effect for product short description */
+.product-short-des:hover {
+  opacity: 1;
+  white-space: normal;
+}
+
+/* Price */
+.price {
+  font-weight: bolder;
+  font-size: 17px;
+  color: #333;
+  display: block;
+}
+
+/* Actual price */
+.actual-price {
+  opacity: 0.5;
+  text-decoration: line-through;
+  font-size: 9px;
+  color: #999;
+  display: block;
+  margin-bottom: 20px;
+}
+/* Previous and Next Buttons */
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+/* Collection Container */
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+/* Collection */
+.collection {
+  position: relative;
+  overflow: hidden; /* Added overflow property to prevent image overflow */
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease; /* Added smooth transition for image transform */
+}
+
+.collection:hover img {
+  transform: scale(1.1); /* Added hover effect to scale up the image */
+}
+
+/* Collection Caption */
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+  opacity: 0.9; /* Reduced opacity for a more subtle look */
+}
+
+/* Full-width Collection */
+.collection:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+
+

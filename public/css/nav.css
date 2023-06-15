@@ -1,0 +1,323 @@
+/*
+Nav.css
+This CSS file contains styles for a navigation section on a webpage.
+*/
+
+/* Import Font Awesome CSS library */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+/* Apply CSS reset and default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header styling */
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #fff;
+  box-shadow: 0 5px rgba(255, 255, 255, 0.06);
+}
+
+/* Sticky navigation bar */
+#navbar {
+  display: sticky;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+}
+
+/* Navigation bar list items */
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+/* Navigation bar links */
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+}
+
+/* Active and hover styles for navigation links */
+#navbar li a:hover,
+#navbar li a.active {
+  color: #1a1a1a;
+}
+
+/* Active and hover styles for navigation link indicator */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 99%;
+  height: 2px;
+  background: #1a1a1a;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+/* Mobile navigation */
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+/* Navbar styling */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 9;
+  transition: background-color 0.3s ease;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+/* Navigation container */
+.nav {
+  padding: 10px 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container for navigation links */
+.container-links {
+  list-style: none;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #1a1a1a;
+}
+
+/* Brand logo */
+.brand-logo {
+  height: 60px;
+}
+
+/* Navigation items */
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+/* Search bar container */
+.search {
+  width: 500px;
+  display: flex;
+  transition: width 0.3s ease;
+  margin-right: -55px;
+}
+
+/* Search box input */
+.search-box {
+  width: 80%;
+  height: 35px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #d1d1d1;
+  text-transform: capitalize;
+  background: none;
+  color: #383838;
+  outline: none;
+  transition: width 0.3s ease;
+  font-weight: bold;
+}
+
+/* Search button */
+.search-btn {
+  width: 10%;
+  height: 35px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #383838;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Search button icon */
+.search-btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/search.svg");
+  background-size: cover;
+  filter: invert(1);
+  transition: opacity 0.3s ease;
+}
+
+/* Search button icon on hover */
+.search-btn:hover:before {
+  opacity: 0.7;
+}
+
+/* Search button on hover */
+.search-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Search box on focus */
+.search-box:focus {
+  border-color: #383838;
+}
+
+/* Placeholder text color for search box */
+.search-box::placeholder {
+  color: #a9a9a9;
+}
+
+/* Social media icons in navigation items */
+.nav-items a {
+  margin-left: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Social media icon styles */
+.nav-items a img {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Links container */
+.links-container {
+  width: 100%;
+  display: flex;
+  padding: 10px 10vw;
+  justify-content: center;
+  list-style: none;
+  border-top: 1px solid #d1d1d1;
+}
+
+/* Links in links container */
+.link {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #383838;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.links  {
+  text-transform: capitalize;
+  padding: 0 10px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: #383838;
+  opacity: 1;
+  font-weight: bolder;
+  margin: 20px;
+  margin-top: 10px;
+}
+
+.links:hover {
+  color: #f3f3f3;
+  opacity: 1;
+
+}
+
+/* Hover styles for links */
+.link:hover {
+  opacity: 1;
+}
+
+/* Login/Logout popup styling */
+.login-logout-popup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  top: 40px;
+  width: 200px;
+  transition: .5s;
+  border: 2px solid #f5f5f5;
+}
+
+/* Account info in login/logout popup */
+.account-info {
+  font-size: 17px;
+  margin: 2px 5px -2px 5px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: bolder;
+  transition: color 0.3s ease-in-out;
+}
+
+/* User button in login/logout popup */
+#user-btn {
+  padding: 10px;
+  background: #383838;
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-transform: capitalize;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover styles for account info */
+.account-info:hover {
+  color: #333;
+}
+
+/* Hover styles for user button */
+#user-btn:hover {
+  background: #333;
+}
+
+/* Marquee design */
+.marquee {
+  background-color: #f7f7f7;
+  padding: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+  
+}
+
+/* Hide login/logout popup */
+.hide {
+  opacity: 0;
+  pointer-events: none;
+}

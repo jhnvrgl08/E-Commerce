@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing - Men</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/home.css" /> <!-- Custom home styles -->
+    <link rel="stylesheet" href="../css/feature.css"> <!-- Custom feature styles -->
+    <link rel="stylesheet" href="../css/shop.css"> <!-- Custom shop styles -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> <!-- Pro Font Awesome -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <section class="navbar"></section> <!-- Navigation bar -->
+
+    <div class="marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite" width="100%">
+          Discover the latest fashion trends and create stunning outfits with Clothing Corner.
+          We provide both Basic and Creative modes for you to customize your style according to your preferences.
+      </marquee>
+    </div>
+
+    <section class="link-container" style="border-top: 2px solid #f2f2f2; border-bottom:1px solid #f2f2f2;">
+      <a href="../shop.html" class="link-a">Latest</a> <!-- Link to the latest products -->
+      <a href="../shop-men.html" class="link-a active">Men</a> <!-- Link to men's products (current active link) -->
+      <a href="../shop-women.html" class="link-a">Women</a> <!-- Link to women's products -->
+      <a href="../shop-accessories.html" class="link-a">Accessories</a> <!-- Link to accessories -->
+      <a href="../shop-sale.html" class="link-a">Sale</a> <!-- Link to sale items -->
+    </section>
+
+    <section id="page-header" class="contact-header" style="margin-top: 30px; background-image: url(../img/banner/b2.jpg); ">
+      <h2 style="font-family: Brandon Bold,Helvetica,Arial,sans-serif;">MEN PRODUCTS</h2> <!-- Heading for men's products -->
+    </section>
+
+    <section style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center; margin-bottom: 10px;">
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+      <h2 style="font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 10px;">TOPS - COLLECTION</h2> <!-- Heading for tops collection -->
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+    </section>
+
+    <section id="men-products-1"></section> <!-- Placeholder for men's tops products -->
+    <section id="men-products-2"></section> <!-- Placeholder for men's polo products -->
+
+    <section style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center; margin-bottom: 10px;">
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+      <h2 style="font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 10px;">BOTTOMS - COLLECTION</h2> <!-- Heading for bottoms collection -->
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+    </section>
+
+    <section id="men-products-3"></section> <!-- Placeholder for men's shorts products -->
+    <section id="men-products-4"></section> <!-- Placeholder for men's jeans products -->
+    <section id="men-products-5"></section> <!-- Placeholder for more men's products -->
+
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button style="font-weight:bolder" class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <footer></footer> <!-- Footer section -->
+
+    <!-- Scripts -->
+    <script src="js/nav.js"></script> <!-- Custom navigation script -->
+    <script src="js/home.js"></script> <!-- Custom home script -->
+    <script src="js/header.js"></script> <!-- Custom header script -->
+    <script src="js/app-home.js"></script> <!-- Custom app-home script -->
+    <script src="js/footer.js"></script> <!-- Custom footer script -->
+
+    <script>
+      // Fetch and display men's shirt products
+      getProducts('Men Shirt', 'men shirt').then(data => createProductSlider(data, '#men-products-1', 'Shirt'))
+
+      // Fetch and display men's polo products
+      getProducts('Men Polo', 'men polo').then(data => createProductSlider(data, '#men-products-2', 'Polo'))
+
+      // Fetch and display men's short products
+      getProducts('Men Short', 'men short').then(data => createProductSlider(data, '#men-products-4', 'Shorts'))
+
+      // Fetch and display men's jeans products
+      getProducts('Men Jeans', 'men jeans').then(data => createProductSlider(data, '#men-products-5', 'Jeans'))
+    </script>
+  </body>
+</html>

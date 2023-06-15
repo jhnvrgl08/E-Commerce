@@ -1,0 +1,35 @@
+/*
+search.css
+This CSS file contains styles for a search section on a webpage.
+*/
+
+
+/* Add styles for search results container */
+.search-results {
+  width: 100%;
+  padding: 60px 0;
+  text-transform: capitalize;
+  
+}
+
+/* Add styles for search results heading */
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  padding: 0 10vw;
+}
+
+.heading span {
+  font-weight: 700;
+  margin-bottom: 40px;
+
+}
+
+/* Add styles for product container */
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: auto;
+  grid-row-gap: 40px;
+}

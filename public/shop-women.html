@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing - Women</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/home.css" /> <!-- Styles for the home page -->
+    <link rel="stylesheet" href="../css/feature.css"> <!-- Styles for features -->
+    <link rel="stylesheet" href="../css/shop.css"> <!-- Styles for the shop page -->
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Preconnect to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap" rel="stylesheet"> <!-- Custom font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/> <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" /> <!-- Pro version of Font Awesome -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+
+    <section class="navbar"></section> <!-- Navigation bar section -->
+    <div class="marquee">
+      <!-- Marquee for displaying a scrolling message -->
+      <marquee behavior="scroll" direction="left" scrollamount="10" loop="infinite" width="100%">
+          Discover the latest fashion trends and create stunning outfits with Clothing Corner.
+          We provide both Basic and Creative modes for you to customize your style according to your preferences.
+      </marquee>
+    </div>
+
+    <section class="link-container" style="border-top: 2px solid #f2f2f2; border-bottom:1px solid #f2f2f2;">
+      <!-- Section for displaying links -->
+      <a href="../shop.html" class="link-a">Latest</a>
+      <a href="../shop-men.html" class="link-a">Men</a>
+      <a href="../shop-women.html" class="link-a active">Women</a>
+      <a href="../shop-accessories.html" class="link-a">Accessories</a>
+      <a href="../shop-sale.html" class="link-a">Sale</a>
+    </section>
+
+    <section id="page-header" class="contact-header" style="margin-top: 30px; background-image: url(../img/banner/b2.jpg); ">
+      <!-- Page header section -->
+      <h2 style="font-family: Brandon Bold,Helvetica,Arial,sans-serif;">WOMEN PRODUCTS</h2>
+    </section>
+
+
+    <section style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center; margin-bottom: 10px;">
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+      <h2 style="font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 10px;">TOPS - COLLECTION</h2>
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+    </section>
+
+    <section id="women-products-1"></section>
+    <section id="women-products-2"></section>
+
+    <section style="background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); text-align: center; margin-bottom: 10px;">
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+      <h2 style="font-family: 'Arial', sans-serif; font-size: 28px; font-weight: bold; color: #333; text-transform: uppercase; letter-spacing: 2px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); margin-bottom: 10px;">BOTTOMS - COLLECTION</h2>
+      <div style="border: 1px solid #9f9f9f; margin-top: 10px; margin-bottom: 10px;"></div>
+    </section>
+
+    <section id="women-products-3"></section>
+    <section id="women-products-4"></section>
+    <section id="women-products-5"></section>
+
+    <!-- Newsletter section -->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button style="font-weight:bolder" class="normal">Sign Up</button>
+      </div>
+    </section>
+    
+    <footer></footer> <!-- Footer section -->
+
+
+    <!-- JavaScript files -->
+    <script src="js/nav.js"></script> <!-- Navigation functionality -->
+    <script src="js/home.js"></script> <!-- Home-related functionality -->
+    <script src="js/header.js"></script> <!-- Header-related functionality -->
+    <script src="js/app-home.js"></script> <!-- Application-specific home functionality -->
+    <script src="js/footer.js"></script> <!-- Footer-related functionality -->
+
+    <script>
+      // Retrieve and display Women Shirt products
+      getProducts('Women Shirt', 'women shirt').then(data => createProductSlider(data, '#women-products-1', 'Shirt'))
+
+      // Retrieve and display Women Sweater products
+      getProducts('Women Sweater', 'women sweater').then(data => createProductSlider(data, '#women-products-2', 'Sweater'))
+
+      // Retrieve and display Women Short products
+      getProducts('Women Short', 'women short').then(data => createProductSlider(data, '#women-products-4', 'Shorts'))
+
+      // Retrieve and display Women Jeans products
+      getProducts('Women Jeans', 'women jeans').then(data => createProductSlider(data, '#women-products-5', 'Jeans'))
+    </script>
+
+  </body>
+</html>

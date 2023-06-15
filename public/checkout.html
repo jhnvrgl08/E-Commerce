@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML5 -->
+<html lang="en">
+<!-- Sets the language of the document to English -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Sets compatibility mode for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the viewport to control the page's dimensions and scaling -->
+    <title>Clothing : Checkout</title>
+    <!-- Sets the title of the document, displayed in the browser's title bar or tab -->
+
+    <!-- Links to external stylesheets -->
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- Defines the main content of the document -->
+
+    <!-- Navigation bar -->
+    <nav class="navbar"></nav>  
+
+    <!-- Alert box -->
+    <div class="alert-box">
+        <img src="img/error.png" class="alert-img" alt="">
+        <p class="alert-msg"></p>
+    </div>
+
+    <!-- Form for entering delivery address -->
+    <div class="form">
+        <h1 class="heading">checkout</h1>
+        <p class="text">delivery address</p>
+        <input type="text" id="address" placeholder="  address">
+        <input type="text" id="street" placeholder="street">
+        <div class="three-input-container">
+            <input type="text" id="city" placeholder="city">
+            <input type="text" id="state" placeholder="state">
+            <input type="text" id="pincode" placeholder="pin code">
+        </div>
+        <input type="text" id="landmark" placeholder="land mark">
+    </div>
+
+    <!-- Cart section -->
+    <div class="cart-section">
+        <!-- Product list -->
+        <div class="product-list">
+            <p class="section-heading">your cart</p>
+            <div class="cart">
+
+            </div>
+        </div>
+        <!-- Checkout section -->
+        <div class="checkout-section">
+            <div class="checkout-box">
+                <p class="text">your total bill,</p>
+                <h1 class="bill">$00</h1>
+                <button class="place-order-btn">place order</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Links to external scripts -->
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/token.js"></script>
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>

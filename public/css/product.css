@@ -1,0 +1,255 @@
+/*
+product.css
+This CSS file contains styles for a product section on a webpage.
+*/
+
+/* Product details section */
+.product-details {
+  width: 100%;
+  padding: 40px 10vw;
+  display: flex;
+  justify-content: space-between;
+  animation-name: slideInFromBottom;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Image slider */
+.image-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  position: relative;
+  background-image: url('../img/product-image-1.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Product images */
+.product-images {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100px;
+  grid-gap: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+/* Product image */
+.product-images img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-images img:hover {
+  transform: scale(1.1);
+}
+
+.product-images img.active {
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Details */
+.details {
+  width: 50%;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.details .product-brand {
+  text-transform: capitalize;
+  font-size: 30px;
+  font-weight: bolder;
+  color: #383838;
+}
+
+.details .product-short-des {
+  font-size: 25px;
+  line-height: 30px;
+  opacity: 0.7;
+  height: auto;
+  margin: 15px 0 30px;
+  color: #383838;
+  font-style: italic;
+  border-left: 2px solid #383838;
+  padding-left: 10px;
+}
+
+/* Product price */
+.product-price {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.product-actual-price {
+  font-size: 30px;
+  opacity: 0.5;
+  text-decoration: line-through;
+  margin: 0 20px;
+  font-weight: 300;
+}
+
+/* Product discount */
+.product-discount {
+  color: #383838;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Product sub-heading */
+.product-sub-heading {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 60px 0 10px;
+  font-weight: bold;
+  color: #555;
+  letter-spacing: 2px;
+}
+
+/* Size radio button */
+.size-radio-btn {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #383838;
+  border-radius: 50%;
+  margin: 10px;
+  margin-left: 0;
+  line-height: 80px;
+  text-transform: uppercase;
+  color: #383838;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  font-weight: bolder;
+}
+
+.size-radio-btn:hover {
+  background-color: #eaeaea;
+  border-color: #555;
+  color: #555;
+}
+
+.size-radio-btn.check {
+  background: #383838;
+  color: #fff;
+  border-color: #383838;
+}
+
+/* Buttons */
+.btn {
+  width: 48%;
+  padding: 20px;
+  border-radius: 5px;
+  background: none;
+  border: 1px solid #383838;
+  color: #383838;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 20px 0;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f9f9f9;
+  border-color: #555;
+  color: #555;
+}
+
+/* Cart button */
+.cart-btn {
+  margin-right: 2%;
+  background: #383838;
+  color: #fff;
+}
+
+.cart-btn:hover {
+  color: #383838;
+  background-color: #fff;
+}
+
+/* Wishlist button */
+.wishlist-btn {
+  color: #383838;
+  background-color: #fff;
+}
+
+.wishlist-btn:hover {
+  background: #383838;
+  color: #fff;
+}
+
+/* Detail description */
+.detail-des {
+  padding: 0 10vw;
+  text-transform: capitalize;
+  animation-name: slideInFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Heading */
+.heading {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Description */
+.des {
+  color: #383838;
+  line-height: 25px;
+  white-space: pre-wrap;
+  margin-bottom: 50px;
+}

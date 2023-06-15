@@ -1,0 +1,46 @@
+/*
+CSS for checkout page
+This CSS file is responsible for styling the checkout page.
+*/
+
+/* Styles for body */
+body {
+  display: block;
+  background: #fff;
+}
+
+/* Styles for .form */
+.form {
+  width: 100%;
+  padding: 20px 10vw;
+}
+
+/* Styles for .heading */
+.heading {
+  text-transform: capitalize;
+  font-size: 500; /* Note: This line seems to be duplicated. */
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Styles for .form input */
+.form input {
+  background: #f5f5ff !important;
+  width: 100% !important;
+}
+
+/* Styles for .three-input-container */
+.three-input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles for .three-input-container input */
+.three-input-container input {
+  margin: 0 !important;
+}
+
+/* Styles for #state */
+#state {
+  margin: 0 20px !important;
+}

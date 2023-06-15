@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing : Add Product</title>
+
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/addProduct.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <img src="../img/loader.gif" class="loader" alt=""> <!-- Loading animation -->
+
+    <div class="alert-box">
+        <img src="../img/error.png" class="alert-img" alt=""> <!-- Alert image -->
+        <p class="alert-msg"></p> <!-- Alert message -->
+    </div>
+
+    <img src="../img/dark-logo.png" class="logo" alt=""> <!-- Logo image -->
+
+    <div class="form">
+        <input type="text" id="product-name" placeholder="product name"> <!-- Input for product name -->
+        <input type="text" id="short-des" maxlength="100" placeholder="short line about the product"> <!-- Input for short description -->
+        <textarea id="des" placeholder="detail description"></textarea> <!-- Textarea for detailed description -->
+
+        <!-- product image -->
+        <div class="product-info">
+            <div class="product-image"><p class="text">product image</p></div> <!-- Placeholder for product image -->
+            <div class="upload-image-sec">
+                <!-- upload inputs -->
+                <p class="text"><img src="../img/camera.png" alt="">upload image</p> <!-- Upload image text -->
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload-btn" hidden> <!-- First image upload input -->
+                    <label for="first-file-upload-btn" class="upload-image"></label> <!-- First image upload label -->
+                    <input type="file" class="fileupload" id="second-file-upload-btn" hidden> <!-- Second image upload input -->
+                    <label for="second-file-upload-btn" class="upload-image"></label> <!-- Second image upload label -->
+                    <input type="file" class="fileupload" id="third-file-upload-btn" hidden> <!-- Third image upload input -->
+                    <label for="third-file-upload-btn" class="upload-image"></label> <!-- Third image upload label -->
+                    <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden> <!-- Fourth image upload input -->
+                    <label for="fourth-file-upload-btn" class="upload-image"></label> <!-- Fourth image upload label -->
+                </div>
+            </div>
+
+            <div class="select-sizes">
+                <p class="text">size available</p> <!-- Text for available sizes -->
+                <div class="sizes">
+                    <input type="checkbox" class="size-checkbox" id="xs" value="xs" /> <!-- Checkbox for XS size -->
+                    <input type="checkbox" class="size-checkbox" id="s" value="s" /> <!-- Checkbox for S size -->
+                    <input type="checkbox" class="size-checkbox" id="m" value="m" /> <!-- Checkbox for M size -->
+                    <input type="checkbox" class="size-checkbox" id="l" value="l" /> <!-- Checkbox for L size -->
+                    <input type="checkbox" class="size-checkbox" id="xl" value="xl" /> <!-- Checkbox for XL size -->
+                    <input type="checkbox" class="size-checkbox" id="xxl" value="xxl" /> <!-- Checkbox for XXL size -->
+                    <input type="checkbox" class="size-checkbox" id="xxxl" value="xxxl" /> <!-- Checkbox for XXXL size -->
+                </div>
+            </div>
+        </div>
+
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="actual price"> <!-- Input for actual price -->
+            <input type="number" id="discount" placeholder="discount percentage"> <!-- Input for discount percentage -->
+            <input type="number" id="sell-price" placeholder="selling price"> <!-- Input for selling price -->
+        </div>
+
+        <input type="number" id="stock" min="20" placeholder="item in stocks (minimum 20)"> <!-- Input for stock quantity -->
+
+        <textarea id="tags" placeholder="Enter categories here, for example - Men, Jeans, Blue Jeans, Rough Jeans (You should add men or women at start)"></textarea> <!-- Textarea for product tags -->
+
+        <input type="checkbox" class="checkbox" id="tac" checked> <!-- Checkbox for terms and conditions -->
+        <label for="tac">clothing take 30% from your total sell</label> <!-- Label for terms and conditions checkbox -->
+
+        <div class="buttons">
+            <button class="btn" id="add-btn">add product</button> <!-- Button to add product -->
+            <button class="btn" id="save-btn">save draft</button> <!-- Button to save draft -->
+        </div>
+    </div>
+
+    <script src="../js/token.js"></script> <!-- Script for token handling -->
+    <script src="../js/addProduct.js"></script> <!-- Script for adding a product -->
+
+</body>
+</html>

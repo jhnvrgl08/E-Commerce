@@ -1,0 +1,268 @@
+/* Importing external fonts and Font Awesome library */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+}
+
+/* Footer styles */
+footer {
+  background: #000;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px;
+}
+
+/* Separator line above footer */
+footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #fff;
+}
+
+/* Content container within footer */
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+/* Top section within footer */
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+/* Logo and details within top section */
+.content .top .logo-details {
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Social media icons within top section */
+.content .top .media-icons {
+  display: flex;
+}
+
+/* Individual social media icon */
+.content .top .media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+/* Styling for specific social media icon (1st icon) */
+.top .media-icons a:nth-child(1) {
+  background: #fff;
+  color: #000;
+}
+
+.top .media-icons a:nth-child(1):hover {
+  color: #fff;
+  background: #000;
+}
+
+/* Styling for specific social media icon (2nd icon) */
+.top .media-icons a:nth-child(2) {
+  background: #fff;
+  color: #000;
+}
+
+.top .media-icons a:nth-child(2):hover {
+  color: #fff;
+  background: #000;
+}
+
+/* Styling for specific social media icon (3rd icon) */
+.top .media-icons a:nth-child(3) {
+  background: #fff;
+  color: #000;
+}
+
+.top .media-icons a:nth-child(3):hover {
+  color: #fff;
+  background: #000;
+}
+
+/* Styling for specific social media icon (4th icon) */
+.top .media-icons a:nth-child(4) {
+  background: #fff;
+  color: #000;
+}
+
+.top .media-icons a:nth-child(4):hover {
+  color: #fff;
+  background: #000;
+}
+
+/* Styling for specific social media icon (5th icon) */
+.top .media-icons a:nth-child(5) {
+  background: #fff;
+  color: #000;
+}
+
+.top .media-icons a:nth-child(5):hover {
+  color: #fff;
+  background: #000;
+}
+
+/* Link boxes section within footer */
+footer .content .link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Individual link box within link boxes section */
+footer .content .link-boxes .box {
+  width: calc(100% / 5 - 10px);
+}
+
+/* Styling for link name within link box */
+.content .link-boxes .box .link_name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Styling for underline below link name */
+.link-boxes .box .link_name::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+
+/* Styling for list items within link box */
+.content .link-boxes .box li {
+  margin: 6px 0;
+  list-style: none;
+}
+
+/* Styling for links within link box */
+.content .link-boxes .box li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect for links within link box */
+.content .link-boxes .box li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Styling for input box within link boxes section */
+.content .link-boxes .input-box {
+  margin-right: 55px;
+}
+
+/* Styling for input field within input box */
+.link-boxes .input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #fff;
+  background: #000;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+/* Styling for placeholder text within input field */
+.link-boxes .input-box input::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Styling for button within input box */
+.link-boxes .input-box input[type="button"] {
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Hover effect for button within input box */
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}
+
+/* Bottom details section within footer */
+footer .bottom-details {
+  width: 100%;
+  background: #000;
+}
+
+/* Content container within bottom details section */
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for text within bottom details section */
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+/* Hover effect for links within bottom details section */
+.bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Styling for spacing between links within bottom details section */
+.bottom-details .bottom_text a {
+  margin-right: 10px;
+}

@@ -1,0 +1,311 @@
+/*
+
+header.css
+This CSS file contains styles for a header section on a webpage.
+
+*/
+
+/* Reset default margin, padding, and box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the body to take up the full width and height of the viewport */
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: block;
+}
+
+/* Create an overlay that covers the entire page */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  opacity: 1;
+  z-index: 9;
+  animation: fade-out 2s forwards 1;
+  pointer-events: none;
+}
+
+/* Define a fade-out animation for the overlay */
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Styling for the left-side container */
+.left-side {
+  width: 15vw;
+  height: 51vw;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 0;
+}
+
+/* Styling for the logo header */
+.logo-header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 4vw;
+  left: -1.5vw;
+  transform: rotate(-90deg);
+  user-select: none;
+}
+
+/* Styling for small products */
+.sm-product {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling for the product index */
+.product-index {
+  font-size: 2vw;
+  text-align: center;
+}
+
+/* Styling for the small product image container */
+.sm-product-img-container {
+  position: relative;
+  margin: 0.5vw 0;
+  height: 15vw;
+  overflow: hidden;
+}
+
+/* Styling for the small product image */
+.sm-product-img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+/* Styling for the small product description */
+.sm-product-des {
+  text-align: right;
+  padding: 0 0.5vw;
+  line-height: 1.5vw;
+  font-size: 1vw;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the social link header */
+.social-link-header {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Styling for social link icons */
+.social-link-header img {
+  width: 1.6vw;
+  height: 1.6vw;
+  margin: 0.5vw;
+  cursor: pointer;
+}
+
+/* Styling for the right-side container */
+.right-side {
+  width: 99vw;
+  height: 51vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -51.5%;
+  border-bottom: 1px solid #f2f2f2;
+  z-index: 1;
+}
+
+/* Styling for the backdrop image */
+.backdrop-img {
+  width: 22vw;
+  height: 50vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  object-fit: cover;
+  filter: blur(0.5vw);
+  overflow: hidden;
+  transform: translateY(9.9%);
+  z-index: 0;
+  border-bottom: 3px solid #ffffff;
+  margin-top: 5px;
+}
+
+/* Styling for the content header */
+.content-header {
+  width: 60%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
+/* Styling for the product detail section */
+.product-detail {
+  width: 60%;
+  position: absolute;
+  left: 1;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+/* Styling for the product name */
+.product-name {
+  font-size: 7vw;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Sirin Stencil', cursive;
+  font-weight: 300;
+  line-height: 9vw;
+}
+
+/* Styling for the product description */
+.product-des {
+  margin: 4vw 0;
+  width: 90%;
+  font-size: 1.2vw;
+  line-height: 2vw;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the buy button */
+.buy-btn {
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font-size: 1.2vw;
+  display: inline-block;
+  padding: 15px 25px;
+  border: 20px;
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: bolder;
+  font-family: 'Sirin Stencil', cursive;
+}
+
+/* Hover styling for the buy button */
+.buy-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Active styling for the buy button */
+.buy-btn:active {
+  transform: scale(0.95);
+}
+
+/* Disabled styling for the buy button */
+.buy-btn:disabled {
+  background-color: #ccc;
+  color: #999;
+  border-color: #999;
+  cursor: not-allowed;
+}
+
+/* Styling for the pulse animation on the buy button */
+@keyframes pulse-animation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply pulse animation to the buy button */
+.buy-btn.pulse {
+  animation: pulse-animation 1.5s infinite;
+}
+
+/* Styling for the next button in the header */
+.nxt-btn-header {
+  border: none;
+  background: none;
+  user-select: none;
+  display: block;
+  margin-left: 550px;
+  margin-top: -50px;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+/* Hover styling for the next button in the header */
+.nxt-btn-header:hover {
+  cursor: pointer;
+}
+
+/* Styling for the next button image in the header */
+.nxt-btn-header img {
+  width: 60%;
+  cursor: pointer;
+}
+
+/* Styling for the product image container */
+.product-img-container {
+  width: 45%;
+  height: 40vw;
+  position: flex;
+  margin: auto;
+  display: block;
+  overflow: hidden;
+  transform: translateX(30%);
+  z-index: 2;
+}
+
+/* Apply slide animation to the product image container */
+.product-img-container.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation: slide-left 1s linear 1;
+}
+
+/* Styling for the product image */
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Apply slide animation to elements with the "slide" class */
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  animation: slide-left 1s linear 1;
+}
+
+/* Define the slide-left animation */
+@keyframes slide-left {
+  to {
+    left: 100%;
+  }
+}

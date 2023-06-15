@@ -1,0 +1,264 @@
+/*
+CSS for contact page
+This CSS file is responsible for styling the contact page.
+*/
+
+/*
+ * Styles for the h1 element.
+ * Sets the font size to 50px, line height to 64px, and color to #222.
+ */
+ h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+/**
+ * Styles for the h2 element.
+ * Sets the font size to 46px, line height to 54px, and color to #222.
+ */
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+/**
+ * Styles for the h4 element.
+ * Sets the font size to 20px and color to #222.
+ */
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+/**
+ * Styles for the h6 element.
+ * Sets the font weight to 700 and font size to 12px.
+ */
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/**
+ * Styles for the p element.
+ * Sets the font size to 16px and color to #465b52.
+ */
+p {
+  font-size: 16px;
+  color: #465b52;
+}
+
+/**
+ * Styles for the elements with the class .section-p1.
+ * Adds padding of 40px on the top and bottom and 80px on the left and right.
+ */
+.section-p1 {
+  padding: 40px 80px;
+}
+
+/**
+ * Styles for the elements with the class .section-m1.
+ * Adds margin of 40px on the top and bottom.
+ */
+.section-m1 {
+  margin: 40px 0;
+}
+
+/* Styles for the Blog Page */
+
+/**
+ * Styles for the element with the id "page-header" and class "contact-header".
+ * Sets the background image to url(../img/about/banner.png).
+ */
+#page-header.contact-header {
+  background-image: url(../img/about/banner.png);
+}
+
+/**
+ * Styles for the element with the id "contact-details".
+ * Sets the display property to flex, aligns items to the center, and justifies content to space-between.
+ */
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/**
+ * Styles for the elements with the class "details" within the element with the id "contact-details".
+ * Sets the width to 40%.
+ */
+#contact-details .details {
+  width: 40%;
+}
+
+/**
+ * Styles for the span elements within the elements with the class "details" within the element with the id "contact-details".
+ * Sets the font size to 14px.
+ */
+#contact-details .details span {
+  font-size: 14px;
+}
+
+/**
+ * Styles for the h2 element within the elements with the class "details" within the element with the id "contact-details".
+ * Sets the font size to 46px, line height to 54px, color to #222, and adds padding of 20px on the top and bottom.
+ */
+#contact-details .details h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+  padding: 20px 0;
+}
+
+/**
+ * Styles for the h3 elements within the elements with the class "details" within the element with the id "contact-details".
+ * Sets the font size to 20px and adds a bottom padding of 15px.
+ */
+#contact-details .details h3 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+
+/**
+ * Styles for the li elements within the elements with the class "details" within the element with the id "contact-details".
+ * Sets the list-style to none and adds padding of 10px on the top and bottom.
+ */
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+/**
+ * Styles for the i elements within the li elements within the elements with the class "details" within the element with the id "contact-details".
+ * Sets the font size to 20px, adds right padding of 22px, and adjusts the top margin.
+ */
+#contact-details .details li i {
+  font-size: 20px;
+  padding-right: 22px;
+  margin-top: 2px;
+}
+
+/**
+ * Styles for the p elements within the li elements within the elements with the class "details" within the element with the id "contact-details".
+ * Sets the margin to 0, font size to 16px, and color to #465b52.
+ */
+#contact-details .details li p {
+  margin: 0;
+  font-size: 16px;
+  color: #465b52;
+}
+
+/**
+ * Styles for the element with the class "map" within the element with the id "contact-details".
+ * Sets the width to 55% and height to 400px.
+ */
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+/**
+ * Styles for the iframe elements within the element with the class "map" within the element with the id "contact-details".
+ * Sets the width and height to 100%.
+ */
+#contact-details .map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ * Styles for the element with the id "form-details".
+ * Sets the display property to flex, justifies content to space-between, adds margin of 30px, padding of 80px, and a border of 1px solid #e1e1e1.
+ */
+#form-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #e1e1e1;
+}
+
+/**
+ * Styles for the form elements within the element with the id "form-details".
+ * Sets the width to 65%, sets the display property to flex with column direction, and aligns items to flex-start.
+ */
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/**
+ * Styles for the input and textarea elements within the form elements within the element with the id "form-details".
+ * Sets the width to 105%, adds padding of 12px on the top and bottom and 15px on the left and right, removes the outline, adds a bottom margin of 10px, and sets the border to 1px solid #e1e1e1.
+ */
+#form-details form input,
+#form-details form textarea {
+  width: 105%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 10px;
+  border: 1px solid #e1e1e1;
+  margin-top: 20px;
+}
+
+/**
+ * Styles for the button elements within the form elements within the element with the id "form-details".
+ * Adds a top margin of 20px, sets the background color to #333, and the text color to #fff.
+ */
+#form-details form button {
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/**
+ * Styles for the div elements within the element with the class "people" within the element with the id "form-details".
+ * Adds a bottom padding of 25px, top padding of 60px, top margin of 20px, right margin of 150px, sets the display property to flex, and aligns items to flex-start.
+ */
+#form-details .people div {
+  padding-bottom: 25px;
+  padding-top: 60px;
+  margin-top: 20px;
+  margin-right: 150px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/**
+ * Styles for the img elements within the div elements within the element with the class "people" within the element with the id "form-details".
+ * Sets the width and height to 65px, sets the object-fit to cover, adds right margin of 15px, and applies border-radius of 50%.
+ */
+#form-details .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+/**
+ * Styles for the p elements within the div elements within the element with the class "people" within the element with the id "form-details".
+ * Sets the margin to 0, font size to 13px, and line height to 25px.
+ */
+#form-details .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+/**
+ * Styles for the span elements within the p elements within the div elements within the element with the class "people" within the element with the id "form-details".
+ * Sets the display to block, font size to 16px, font weight to 600, and color to #000.
+ */
+#form-details .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}

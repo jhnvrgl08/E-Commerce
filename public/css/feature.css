@@ -1,0 +1,511 @@
+/*
+Feature.css
+This CSS file contains styles for a feature section on a webpage.
+*/
+
+/* Import Google Fonts and Font Awesome */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+/* Reset styles for all elements */
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Smooth scrolling behavior for HTML element */
+html {
+scroll-behavior: smooth;
+}
+
+/* Feature Section */
+#feature {
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+border-bottom: 1px solid #f2f2f2;
+border-top: 1px solid #f2f2f2;
+}
+
+/* Heading styles */
+#feature h1 {
+font-size: 50px;
+line-height: 64px;
+color: #222;
+}
+
+#feature h2 {
+font-size: 46px;
+line-height: 54px;
+color: #222;
+}
+
+#feature h4 {
+font-size: 20px;
+color: #222;
+}
+
+#feature h6 {
+font-weight: bolder;
+font-size: 12px;
+}
+
+/* Paragraph styles */
+#feature p {
+font-size: 16px;
+color: #465b52;
+}
+
+/* Section-p1 styles */
+#feature .section-p1 {
+padding: 40px 80px;
+border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Section-m1 styles */
+#feature .section-m1 {
+margin: 40px 0;
+}
+
+/* Button styles */
+button.normal {
+font-size: 14px;
+font-weight: 600;
+padding: 15px 30px;
+color: #000;
+background-color: #fff;
+border-radius: 4px;
+cursor: pointer;
+border: none;
+outline: none;
+transition: 0.2s;
+}
+
+button.white {
+display: inline-flex;
+font-size: 16px;
+font-weight: 600;
+padding: 14px 28px;
+color: #fff;
+background-color: transparent;
+cursor: pointer;
+border: 1px solid #fff;
+outline: none;
+transition: 0.2s;
+text-align: center;
+}
+
+/* Feature Box styles */
+#feature .fe-box {
+width: 180px;
+text-align: center;
+padding: 25px 15px;
+box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+border: 1px solid #cce7d0;
+border-radius: 4px;
+margin: 15px 0;
+}
+
+#feature .fe-box img {
+width: 100%;
+margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+display: inline-block;
+padding: 9px 8px 6px 8px;
+line-height: 1;
+border-radius: 4px;
+color: #088178;
+background-color: #fddde4;
+}
+
+#feature .fe-box:hover {
+box-shadow: 10px 10px 54px rgba(70, 62, 211, 0.1);
+}
+
+#feature .fe-box:nth-child(2) h6 {
+background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+background-color: #cdd4f8;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+background-color: #f6dbf6;
+}
+
+#feature .fe-box:nth-child(6) h6 {
+background-color: #fff2e5;
+}
+
+#join-clothing-fam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  height: 100vh; /* Adjust the height based on your layout */
+  box-sizing: border-box;
+}
+
+.joins{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.signs {
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fe-box {
+  text-align: center;
+}
+
+.fe-box img {
+  width: 150px;
+  height: auto;
+}
+
+.signup-buttons {
+  text-decoration: none;
+  display: flexbox;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-left: 46%;
+  margin-top: 20%;
+}
+
+.signup-buttons:hover {
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+
+/* Product1 section styles */
+#product1 {
+text-align: center;
+border-bottom: 1px solid #f2f2f2;
+border-top: 1px solid #f2f2f2;
+}
+
+/* Product1 hover styles */
+#product1 .pro:hover {
+border-radius: 25px;
+}
+
+#product1 .pro .hover-image {
+position: absolute;
+top: 0;
+left: 0;
+opacity: 0;
+min-width: 250px;
+transition: opacity 0.3s ease-in-out;
+padding: 10px 12px;
+border-radius: 25px;
+}
+
+#product1 .pro:hover .hover-image {
+opacity: 1;
+}
+
+/* Product1 container styles */
+#product1 .pro-container {
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+flex-wrap: wrap;
+}
+
+/* Product1 box styles */
+#product1 .pro {
+width: 23%;
+min-width: 250px;
+padding: 10px 12px;
+border: 1px solid #cce7d0;
+border-radius: 25px;
+cursor: pointer;
+box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+margin: 15px 0;
+transition: 0.2s ease;
+position: relative;
+}
+
+#product1 .pro:hover {
+box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#product1 .pro img {
+width: 100%;
+border-radius: 20px;
+}
+
+#product1 .pro .des {
+text-align: start;
+padding: 10px 0;
+}
+
+#product1 .pro .des span {
+color: #606063;
+font-size: 12px;
+}
+
+#product1 .pro .des h5 {
+padding-top: 7px;
+color: #1a1a1a;
+font-size: 14px;
+}
+
+#product1 .pro .des i {
+font-size: 12px;
+color: rgba(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+padding-top: 7px;
+font-size: 15px;
+font-weight: 700;
+color: #088178;
+}
+
+#product1 .pro .cart {
+width: 40px;
+height: 40px;
+line-height: 40px;
+border-radius: 50px;
+background-color: #e8f6ea;
+font-weight: 500;
+color: #088178;
+border: 1px solid #cce7d0;
+position: absolute;
+bottom: 20px;
+right: 20px;
+}
+
+/* Styling for the main banner */
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../img/banner/b2.jpg);
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Styling for heading h4 inside the banner */
+#banner h4 {
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Styling for heading h2 inside the banner */
+#banner h2 {
+  color: #fff;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+/* Styling for span inside heading h2 */
+#banner h2 span {
+  color: #ef3636;
+}
+
+/* Styling for button on hover inside the banner */
+#banner button:hover {
+  background: #088178;
+  color: #fff;
+}
+
+/* Styling for small banner */
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: none;
+}
+
+/* Styling for banner boxes inside small banner */
+#sm-banner .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../img/banner/b17.jpg);
+  min-width: 850px;
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+/* Styling for second banner box inside small banner */
+#sm-banner .banner-box2 {
+  background-image: url(../img/banner/b10.jpg);
+}
+
+/* Styling for heading h4 inside small banner */
+#sm-banner h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/* Styling for heading h2 inside small banner */
+#sm-banner h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+/* Styling for span inside small banner */
+#sm-banner span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+/* Styling for button on hover inside the banner box in small banner */
+#sm-banner .banner-box:hover button {
+  background-color: #088178;
+  border: 1px solid #088178;
+}
+
+/* Styling for banner 3 */
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: none;
+}
+
+/* Styling for banner boxes inside banner 3 */
+#banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url(../img/banner/b7.jpg);
+  min-width: 30%;
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Styling for second banner box inside banner 3 */
+#banner3 .banner-box2 {
+  background-image: url(../img/banner/b4.jpg);
+}
+
+/* Styling for third banner box inside banner 3 */
+#banner3 .banner-box3 {
+  background-image: url(../img/banner/b18.jpg);
+}
+
+/* Styling for heading h2 inside banner 3 */
+#banner3 h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+/* Styling for heading h3 inside banner 3 */
+#banner3 h3 {
+  color: #ec544e;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* Styling for newsletter section */
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(../img/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+}
+
+/* Styling for heading h4 inside the newsletter section */
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Styling for paragraph p inside the newsletter section */
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+}
+
+/* Styling for span inside paragraph p */
+#newsletter p span {
+  color: #ffbd27;
+}
+
+/* Styling for form inside the newsletter section */
+#newsletter .form {
+  display: flex;
+  width: 40%;
+}
+
+/* Styling for input field inside the newsletter section */
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Styling for button inside the newsletter section */
+#newsletter button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+

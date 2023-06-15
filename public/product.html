@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product -</title>
+
+    <!-- External CSS Stylesheets -->
+    <link rel="stylesheet" href="../css/home.css" /> <!-- Styles for the home page -->
+    <link rel="stylesheet" href="../css/product.css" /> <!-- Styles for the product page -->
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"> <!-- Apple touch icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> <!-- Favicon for 32x32 resolution -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> <!-- Favicon for 16x16 resolution -->
+    <link rel="manifest" href="img/site.webmanifest"> <!-- Web app manifest -->
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"> <!-- Mask icon for Safari pinned tab -->
+    <meta name="msapplication-TileColor" content="#da532c"> <!-- Tile color for Windows -->
+    <meta name="theme-color" content="#ffffff"> <!-- Theme color for the browser -->
+  </head>
+  <body>
+    <nav class="navbar"></nav> <!-- Navigation bar -->
+
+    <section class="product-details">
+      <div class="image-slider">
+          <div class="product-images">
+              <img src="" class="active" alt=""> <!-- Active product image -->
+              <img src="" alt=""> <!-- Additional product images -->
+              <img src="" alt="">
+              <img src="" alt="">
+          </div>
+      </div>
+  
+      <div class="details">
+          <h2 class="product-brand"></h2> <!-- Product brand -->
+          <p class="product-short-des"></p> <!-- Product short description -->
+          <span class="product-price"></span> <!-- Product price -->
+          <span class="product-actual-price"></span> <!-- Product actual price -->
+          <span class="product-discount"></span> <!-- Product discount -->
+  
+          <p class="product-sub-heading">select size</p> <!-- Sub-heading for size selection -->
+  
+          <input type="radio" name="size" value="xs" hidden id="xs-size"> <!-- Radio button for selecting size XS -->
+          <label for="xs-size" class="size-radio-btn">xs</label>
+  
+          <input type="radio" name="size" value="s" hidden id="s-size"> <!-- Radio button for selecting size S -->
+          <label for="s-size" class="size-radio-btn">s</label>
+  
+          <input type="radio" name="size" value="m" hidden id="m-size"> <!-- Radio button for selecting size M -->
+          <label for="m-size" class="size-radio-btn">m</label>
+  
+          <input type="radio" name="size" value="l" hidden id="l-size"> <!-- Radio button for selecting size L -->
+          <label for="l-size" class="size-radio-btn">l</label>
+  
+          <input type="radio" name="size" value="xl" hidden id="xl-size"> <!-- Radio button for selecting size XL -->
+          <label for="xl-size" class="size-radio-btn">xl</label>
+  
+          <input type="radio" name="size" value="xxl" hidden id="xxl-size"> <!-- Radio button for selecting size XXL -->
+          <label for="xxl-size" class="size-radio-btn">xxl</label>
+  
+          <input type="radio" name="size" value="xxxl" hidden id="xxxl-size"> <!-- Radio button for selecting size XXXL -->
+          <label for="xxxl-size" class="size-radio-btn">xxxl</label>
+  
+          <div class="btn-group">
+            <button class="btn cart-btn">add to cart</button> <!-- Button to add the product to the cart -->
+            <button class="btn wishlist-btn">add to wishlist</button> <!-- Button to add the product to the wishlist -->
+          </div>
+      </div>
+  </section>
+  
+  <section class="detail-des">
+    <h2 class="heading">description</h2> <!-- Heading for the product description -->
+    <p class="des"></p> <!-- Product description -->
+  </section>
+  
+  <section class="container-for-card-slider"></section> <!-- Container for card slider -->
+  
+  <footer></footer> <!-- Footer section -->
+  
+  <!-- External JavaScript files -->
+  <script src="../js/nav.js"></script> <!-- JavaScript for navigation functionality -->
+  <script src="../js/footer.js"></script> <!-- JavaScript for footer functionality -->
+  <script src="../js/home.js"></script> <!-- JavaScript for home page functionality -->
+  <script src="../js/product.js"></script> <!-- JavaScript for product page functionality -->
+    </body>
+  </html>

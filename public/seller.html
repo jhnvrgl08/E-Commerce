@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Dashboard</title>
+
+    <link rel="stylesheet" href="css/search.css"> <!-- Stylesheet for search functionality -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Stylesheet for the home page -->
+    
+    <link rel="stylesheet" href="css/signup.css"> <!-- Stylesheet for the signup page -->
+    <link rel="stylesheet" href="css/seller.css"> <!-- Stylesheet for the seller dashboard page -->
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"> <!-- Apple touch icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> <!-- Favicon for 32x32 resolution -->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> <!-- Favicon for 16x16 resolution -->
+    <link rel="manifest" href="img/site.webmanifest"> <!-- Web App manifest -->
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"> <!-- Mask icon for Safari pinned tab -->
+    <meta name="msapplication-TileColor" content="#da532c"> <!-- Tile color for Microsoft applications -->
+    <meta name="theme-color" content="#ffffff"> <!-- Theme color for the website -->    
+</head>
+<body>
+    
+    <img src="/img/loader.gif" class="loader" alt="" /> <!-- Loader image -->
+
+    <div class="alert-box">
+      <img src="img/error.png" class="alert-img" alt="" /> <!-- Error icon -->
+      <p class="alert-msg">Error message</p> <!-- Error message -->
+    </div>
+    
+    <img src="img/dark-logo.png" class="logo" alt=""> <!-- Dark logo image -->
+    
+    <!-- become seller element -->
+    <div class="become-seller hide">
+        <p class="heading">become a seller</p> <!-- Heading for becoming a seller -->
+        <p class="des">Are you interested in selling your products or services online? Join our platform and unlock a world of opportunities! As a seller, you can showcase your offerings to a wide customer base and boost your business growth. Take advantage of our user-friendly interface, powerful marketing tools, and seamless transaction processes to reach your target audience effectively. Whether you're a small business or an individual entrepreneur, becoming a seller with us opens doors to increased visibility, enhanced credibility, and the potential for higher sales. Don't miss out on this chance to expand your reach and achieve your entrepreneurial goals!</p> <!-- Description for becoming a seller -->
+        <button class="btn" id="apply-btn">apply for seller account</button> <!-- Button to apply for a seller account -->
+    </div>
+    
+    <!-- apply form -->
+    <div class="apply-form hide">
+        <input type="text" id="business-name" placeholder="business name / company name / shop name"> <!-- Input field for business name -->
+        <textarea id="business-add" placeholder="address"></textarea> <!-- Textarea for business address -->
+        <textarea id="about" placeholder="about"></textarea> <!-- Textarea for business description -->
+        <input type="text" id="number" placeholder="number"> <!-- Input field for contact number -->
+        <input type="checkbox" class="checkbox" checked id="terms-and-cond" /> <!-- Checkbox for agreeing to terms and conditions -->
+        <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label><br /> <!-- Label for terms and conditions agreement -->
+        <input type="checkbox" checked class="checkbox" id="legitInfo" /> <!-- Checkbox for confirming legit information -->
+        <label for="legitInfo">all information is legit</label> <!-- Label for confirming legit information -->
+        <button class="submit-btn" id="apply-form-btn">apply</button> <!-- Button to submit the application form -->
+    </div>
+    
+    <!-- products list -->
+    <div class="product-listing hide">
+        <div class="add-product">
+            <p class="add-product-title">add product</p> <!-- Title for adding a product -->
+            <button class="btn" onclick="location.href = '/add-product'">add product</button> <!-- Button to add a product -->
+        </div>
+        <img src="img/no-products.png" class="no-product-image hide" alt=""> <!-- Image for no products available -->
+    
+        <!-- delete alert -->
+        <div class="delete-alert">
+            <div class="alert">
+                <button class="close-btn"><img src="img/close.png" alt=""></button> <!-- Close button for delete alert -->
+                <img src="img/delete-warning.png" class="delete-svg" alt=""> <!-- Delete warning icon -->
+                <p class="text">are you sure? you want to delete this product</p> <!-- Confirmation message for deleting a product -->
+                <button class="delete-btn">delete</button> <!-- Button to delete the product -->
+            </div>
+        </div>
+    
+        <!-- cards -->
+        <div class="product-container">
+            <!-- Product cards (HTML commented out for now) -->
+            <!--
+            <div class="product-card">
+                <div class="product-image">
+                  <span class="tag">Draft</span>
+                  <img src="img/card5.png" class="product-thumb" alt="" />
+                  <button class="card-action-btn edit-btn"><img src="img/edit.png" alt=""></button>
+                  <button class="card-action-btn open-btn"><img src="img/open.png" alt=""></button>
+                  <button class="card-action-btn delete-popup-btn"><img src="img/delete.png" alt=""></button>
+                </div>
+      
+                <div class="product-info">
+                  <h2 class="product-brand">brand</h2>
+                  <p class="product-short-des">a short line about the cloth</p>
+                  <span class="price">$20</span><span class="actual-price">$40</span>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+    
+    <script src="js/token.js"></script> <!-- JavaScript file for token handling -->
+    <script src="js/createProduct.js"></script> <!-- JavaScript file for creating a product -->
+    <script src="js/seller.js"></script> <!-- JavaScript file for seller-specific functionalities -->    
+
+</body>
+</html>
